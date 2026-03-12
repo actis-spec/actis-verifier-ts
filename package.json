@@ -1,0 +1,24 @@
+{
+  "name": "actis-verifier-ts",
+  "version": "0.1.0",
+  "description": "ACTIS v1.0 TypeScript transcript bundle verifier",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "verify": "node dist/index.js",
+    "test": "node dist/index.js"
+  },
+  "bin": {
+    "actis-verify-ts": "./dist/index.js"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.4.0",
+    "adm-zip": "^0.5.10",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
